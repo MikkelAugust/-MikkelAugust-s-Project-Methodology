@@ -1,0 +1,108 @@
+/* Museum Icon (Positioned Top-Right) */
+.museum-icon {
+    position: absolute;
+    top: 80px; /* Aligns the image 80px from the top */
+    right: 50px; /* Aligns the image 50px from the right */
+    max-width: 150px;
+    min-width: 40px;
+    z-index: 5;
+    border-radius: 50%;
+}
+
+nav {
+    position: absolute;
+    top: 138px;
+    left: 63px;
+    width: 10%;
+    height: auto;
+    border-style: double;
+    border-color: white;
+    justify-content: center;
+    max-width: 160px;
+    min-width: 55px;
+}
+
+.menu-button {
+    background-color: #D1503A;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    background-color: #D1503A;
+    color: #FFFFFF;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    background-color: #272626;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 160px;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Dropdown Items */
+.dropdown-item {
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #272626;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-color: #FFFFFF;
+    border-style: double;
+}
+
+.dropdown-item:hover {
+    background-color: #FFFFFF;
+    color: #272626;
+}
+
+/* Show Dropdown on Hover */
+.menu:hover .dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 1087px) {
+
+    .dropdown-item {
+        overflow: hidden;
+    }
+
+    .museum-icon {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .museum-icon {
+        max-width: 70px;
+    }
+
+    .menu-button {
+        font-size: 14px;
+        max-width: 100px;
+        padding: 8px 16px;
+    }
+
+    .dropdown-item {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}

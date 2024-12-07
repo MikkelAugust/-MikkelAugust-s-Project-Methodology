@@ -1,0 +1,44 @@
+@import url('variables.css');
+
+.main-content {
+    flex: 1;
+}
+
+footer {
+    overflow: hidden;
+    background-color: var(--secoundary-orange-color);
+    height: 500px;
+    min-width: 100%;
+}
+
+.social-media {
+    display: fixed;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 17%;
+    margin-right: 15%;
+}
+
+.social-media img {
+    width: 100%;
+    height: 50px;
+}
+
+.twitter-icon:hover, .facebook-icon:hover, .instagram-icon:hover, .github-icon:hover {
+    background-color: var(--red-color);
+}
+
+@media (max-width: 300px){
+   footer {
+    max-width: 300px;
+    min-width: none;
+    margin-bottom: var(--common-margin-0);
+    background-repeat: no-repeat;
+   }
+    
+   .social-media {
+    max-width: 300px;
+    min-width: none;
+    
+   }
+}
