@@ -6,6 +6,9 @@
     <meta name="description" content="Explore the fascinating world of science at the Community Science Museum. Offering hands-on exhibits, interactive displays, and educational experiences for visitors of all ages. Enjoy free entrance and discover the wonders of science today!">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/header,main,footer/footer.html">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/key-hole.css">
     <title>Community Science Museum</title>
 </head>
 <body>
@@ -32,14 +35,38 @@
             <div class="main-textbox">
                 <p class="p1-main">The Community Science Museum of Earth History</p>
                 <h1 class="h1-main">Community Science Museum</h1>
+                <form action="/pages/sign-up.html" method="get">
+                    <button class="main-button1" type="submit">Get Started</button>
+                </form>
             </div>
         </div>
-        <form action="/pages/sign-up.html" method="get">
-            <button class="main-button1" type="submit">Get Started</button>
-        </form>
     </header>
-    
-    <main></main>
+
+    <main>
+        <a href="/pages/history.html" src="/Images/Raptor.jpg" alt="History"></a>
+    </main>
+
+    <input type="checkbox" id="chat-toggle" class="chat-toggle">
+    <label for="chat-toggle" class="key-hole-icon" aria-label="Open Chat">
+        <img class="key-hole-icon" src="/Images/keyhole.jpg" alt="Chat Icon">
+    </label>
+
+    <div class="chat-overlay">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h3>Support Chat</h3>
+                <label for="chat-toggle" class="close-btn" aria-label="Close Chat">&times;</label>
+            </div>
+            <div class="chat-content">
+                <p>Welcome! How can we assist you today?</p>
+                <textarea placeholder="Type your message here..." rows="3"></textarea>
+                <form action="/index.html" method="get">
+                    <button type="submit" href="/index.html" class="send-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="social-media">
             <a href="https://www.facebook.com/" class="social-icon" aria-label="Visit our Facebook page">

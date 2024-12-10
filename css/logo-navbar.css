@@ -1,12 +1,13 @@
-/* Museum Icon (Positioned Top-Right) */
 .museum-icon {
-    position: absolute;
-    top: 80px; /* Aligns the image 80px from the top */
-    right: 50px; /* Aligns the image 50px from the right */
-    max-width: 150px;
-    min-width: 40px;
-    z-index: 5;
-    border-radius: 50%;
+    position: absolute; /* Place it in the top-right corner */
+    top: 70px; /* Distance from the top of the header */
+    right: 30px; /* Distance from the right edge */
+    width: clamp(100px, 5vw, 100px); /* Responsive sizing */
+    height: auto;
+    border-radius: 50%; /* Circular appearance */
+    box-shadow: var(--primary-box-shadow);
+    z-index: 10; /* Ensure it stays on top */
+    cursor: pointer;
 }
 
 nav {
@@ -50,7 +51,7 @@ nav {
     background-color: #272626;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    max-width: 160px;
+    min-width: 151px;
     width: 100%;
     z-index: 10;
 }
@@ -58,7 +59,7 @@ nav {
 /* Dropdown Items */
 .dropdown-item {
     display: block;
-    padding: 10px 15px;
+    padding: 10px 15px; /* Default padding */
     color: #ffffff;
     text-decoration: none;
     background-color: #272626;
@@ -66,6 +67,10 @@ nav {
     transition: background-color 0.3s ease, color 0.3s ease;
     border-color: #FFFFFF;
     border-style: double;
+    font-size: 16px; /* Default font size */
+    white-space: nowrap; /* Prevent wrapping by default */
+    overflow: hidden; /* Ensure no overflow */
+    text-overflow: ellipsis; /* Adds ellipsis for long text */
 }
 
 .dropdown-item:hover {
@@ -81,11 +86,17 @@ nav {
 @media (max-width: 1087px) {
 
     .dropdown-item {
+        font: 50px;
         overflow: hidden;
     }
 
     .museum-icon {
-        max-width: 100px;
+    width: clamp(100px, 8vw, 100px);
+    }
+
+    .dropdown-menu {
+        font: 10px;
+        width: auto;
     }
 }
 
@@ -103,6 +114,7 @@ nav {
 
     .dropdown-item {
         font-size: 14px;
-        padding: 8px 10px;
+        padding: 12px 14px;
+        
     }
 }

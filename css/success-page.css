@@ -1,0 +1,125 @@
+@import url(variables.css);
+@import url(footer.css);
+@import url(logo-navbar.css);
+@import url(key-hole.css);
+
+body {
+    background-image: var(--primary-linear-gradient-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+main {
+    display: block;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.frame1 {
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--primary-colour);
+    width: 35%;
+    height: 400px;
+    padding: 60px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+img {
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    opacity: 0;
+    z-index: 1;
+    width: 80px;
+    height: auto;
+    animation: floatUp 2s ease-out forwards;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: var(--sign-up-button-colour) 0px 15px 20px;
+}
+
+h2 {
+    top: 30px;
+    font-size: 1rem;
+    margin: 10px;
+    text-align: center;
+}
+
+.main-page-button {
+    position: relative;
+    top: 80px;
+    background-color: var(--sign-up-button-colour);
+    border-radius: 500px;
+    box-shadow: var(--primary-box-shadow);
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    color: var(--primary-colour);
+}
+
+.main-page-button:hover {
+    background-color: var(--primary-yellow-colour);
+    color: var(--secoundary-colour);
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 0.5rem;
+    }
+
+    .main-page-button {
+        width: 120px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 0.8rem;
+    }
+}
+
+@keyframes floatUp {
+    0% {
+        bottom: -50px;
+        opacity: 0;
+        transform: translateX(-50%) scale(0.8);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateX(-50%) scale(1);
+    }
+    100% {
+        bottom: 50px;
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+}

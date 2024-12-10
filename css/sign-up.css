@@ -1,0 +1,84 @@
+@import url(variables.css);
+@import url(footer.css);
+@import url(logo-navbar.css);
+@import url(key-hole.css);
+
+body {
+    background-image: linear-gradient(#E8D123, #C86400);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0;
+}
+
+main {
+    display: block;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: auto; /* Adjust to content height */
+}
+
+.frame1 {
+    left: 27%;
+    position: relative;
+    background-color: var(--primary-colour);
+    width: 40%;
+    height: auto; /* Adjust based on content */
+    padding: 60px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the children inside the frame */
+    justify-content: center; 
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: var(--sign-up-button-colour) 0px 15px 20px;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+input {
+    margin: 20px;
+    box-shadow: var(--primary-box-shadow);
+}
+
+.check-box {
+    display: flex;
+    margin: 5px;
+    width: 70%;
+    position: relative;
+    font-size: clamp(10px, 2vw, 12px);
+    margin-top: 10px; /* Add a little space from the inputs */
+}
+
+.sign-up-button {
+    position: relative;
+    background-color: var(--sign-up-button-colour);
+    border-radius: 500px;
+    box-shadow: var(--primary-box-shadow);
+    text-decoration: none;
+    width: 200px;
+    height: 30px;
+    color: var(--primary-colour);
+    text-decoration: underline;
+}
+
+p1 {
+    font-size: clamp(10px, 2vw, 12px);
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--gray-text-colour);
+}
+
+.sign-up-button:hover {
+    background-color: var(--primary-yellow-colour);
+    color: var(--secoundary-colour);
+}
