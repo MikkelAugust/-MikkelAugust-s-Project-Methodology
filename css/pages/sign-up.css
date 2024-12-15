@@ -5,7 +5,7 @@
 @import url(style/menu-button.css);
 
 body {
-    background-image: linear-gradient(#E8D123, #C86400);
+    background-image: var(--primary-linear-gradient-color);
     background-repeat: no-repeat;
     overflow: hidden;
     background-size: cover;

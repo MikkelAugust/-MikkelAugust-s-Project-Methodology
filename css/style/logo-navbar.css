@@ -58,7 +58,7 @@ nav {
     padding: 10px 15px;
     color: var(--primary-colour);
     text-decoration: none;
-    background-color: #272626;
+    background-color: var(--primary-background-colour);
     text-align: center;
     transition: background-color 0.3s ease, color 0.3s ease;
     border-color: var(--primary-colour);

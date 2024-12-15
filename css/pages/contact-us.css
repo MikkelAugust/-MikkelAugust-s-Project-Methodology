@@ -19,7 +19,7 @@ html, body {
 }
 
 .contact-main {
-    background-color: #4F4B4B;
+    background-color: var(--primary-gray-color);
     font-family: 'Changa', sans-serif;
     background-size: cover;
     background-position: center;
