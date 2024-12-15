@@ -1,0 +1,282 @@
+@import url(style/variables.css);
+@import url(style/footer.css);
+@import url(style/logo-navbar.css);
+@import url(style/key-hole.css);
+@import url(style/menu-button.css);
+
+
+
+html, body {
+    font-family: 'Changa', sans-serif;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.kids-content-main {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 1055px;
+    background-size: cover;
+}
+
+header, .header-image{
+    background-image: url(/Images/museum-text.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+main {
+    background-image: var(--primary-linear-gradient-color);
+    font-family: 'Changa', sans-serif;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
+    align-items: center;
+}
+
+.family-image-frame {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.family-image {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.mammoth-frame {
+    position: relative;
+    left: 26%;
+    width: auto;
+    height: auto;
+}
+
+.mammoth-image {
+    width: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--secoundary-box-shadow);
+}
+
+.for-the-kids-frame {
+    background-color: var(--primary-menu-color);
+    width: 50%;
+    max-width: 800px;
+    margin-top: 100px auto;
+    padding: 40px;
+    border-radius: var(--primary-border-radius);
+    text-align: center;
+    box-shadow: var(--secoundary-box-shadow);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.for-the-kids-h1 {
+    margin: 10px;
+    font-size: 2.5vw;
+    line-height: 1.5em;
+}
+
+.for-the-kids-p1 {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin: 10px;
+    padding: 10px;
+}
+
+.toy-frame {
+    position: relative;
+    right: 26%;
+    width: auto;
+    height: auto;
+}
+
+.toy-image {
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--secoundary-box-shadow);
+}
+
+.contact-button-frame {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+}
+
+.contact-button {
+    font-size: 20px;
+    background-color: var(--primary-menu-color);
+    width: 20%;
+    height: 50px;
+    margin-bottom: 100px;
+    margin-left: 20%;
+    border-radius: var(--primary-border-radius);
+}
+
+.skull-image-frame {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
+.skull-image {
+    width: 100%;
+    height: 800px;
+}
+
+.balls-image-frame {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 150px;
+}
+
+.balls-image {
+    display: flex;
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
+    box-shadow: var(--secoundary-box-shadow);
+}
+
+.together-frame {
+    background-color: var(--primary-menu-color);
+    width: 50%;
+    max-width: 800px;
+    margin-top: 100px auto;
+    margin-bottom: 50px;
+    padding: 40px;
+    border-radius: var(--primary-border-radius);
+    text-align: center;
+    box-shadow: var(--secoundary-box-shadow);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.together-h1 {
+    margin: 10px;
+    font-size: 2.5vw;
+    line-height: 1.5em;
+}
+
+.together-p1 {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin: 10px;
+    padding: 10px;
+}
+
+.teacher-frame {
+    display: flex;
+    position: static;
+    width: 100%;
+    height: auto;
+}
+
+.teacher-image {
+    width: 20%;
+    height: auto;
+    border-radius: 500px;
+}
+
+.contact-button:hover {
+    box-shadow: var(--secoundary-box-shadow);
+}
+
+@media (max-width: 1024px) {
+    .contact-button {
+        width: 30%;
+        font-size: 18px;
+        margin-left: 35%;
+    }
+
+    .together-frame {
+    font-size: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .for-the-kids-frame {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .for-the-kids-h1 {
+        font-size: 4vw;
+    }
+
+    .for-the-kids-p1 {
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+
+    .contact-button {
+        width: 40%;
+        font-size: 16px;
+        margin-left: 30%;
+    }
+
+    .together-frame {
+        font-size: 8px;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .for-the-kids-frame {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .for-the-kids-h1 {
+        font-size: 5vw;
+    }
+
+    .for-the-kids-p1 {
+        font-size: 0.9em;
+    }
+
+    .contact-button {
+        width: 60%;
+        font-size: 14px;
+        margin-left: 20%;
+    }
+}

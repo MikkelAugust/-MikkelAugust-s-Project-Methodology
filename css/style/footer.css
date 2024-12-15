@@ -1,0 +1,152 @@
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary-orange-colour);
+    padding: 5px 10px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1000;
+    border-top: 2px solid var(--primary-button-colour);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: auto;
+    padding: 5px 10px;
+}
+
+.footer-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    justify-content: flex-end;
+}
+
+.footer-section h1 {
+    color: var(--secondary-colour);
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+ul {
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+    color: var(--secondary-colour);
+}
+
+li {
+    font-size: 12px;
+    margin-bottom: 3px;
+    color: var(--secondary-colour);
+}
+
+span {
+    text-decoration: underline;
+    color: var(--secondary-colour);
+}
+
+strong {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: auto;
+}
+
+.social-icon {
+    display: flex;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    border-radius: var(--primary-border-radius);
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.1s ease;
+    border-radius: var(--primary-border-radius);
+}
+
+.museum-icon-frame {
+    position: relative;
+    display: block;
+    width: 50%;
+    left: 90%;
+    border-radius: var(--primary-border-radius);
+}
+
+.museum-icon-image {
+    position: relative;
+    border-radius: 500px;
+    width: 20%;
+    height: auto;
+}
+
+.social-icon img:hover {
+    transform: scale(1.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        align-items: flex-start;
+        padding-bottom: 10px;
+    }
+
+    .footer-section {
+        margin: 5px;
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1146px) {
+    li {
+        font-size: 18px;
+    }
+
+    strong {
+        font-size: 20px;
+    }
+
+    .footer-section h1 {
+        font-size: 25px;
+    }
+
+    .social-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .social-icon img {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .social-icon img:hover {
+        transform: scale(1.5);
+    }
+}

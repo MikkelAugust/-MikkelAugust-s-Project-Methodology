@@ -1,0 +1,176 @@
+@import url(style/variables.css);
+@import url(style/footer.css);
+@import url(/css/style/key-hole.css);
+@import url(/css/style/logo-navbar.css);
+
+html, body {
+    font-family: 'Changa', sans-serif;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+        width: 100%;
+        height: 1000px;
+        background-image: url(/Images/orange-space.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        z-index: 1;
+}
+    
+main {
+        background-color: var(--primary-background-colour);
+        font-family: 'Changa', sans-serif;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        overflow-x: hidden;
+        align-items: center;
+}
+
+.exhibits-text-frame {
+    display: flex;
+    position: relative;
+}
+
+.exhibits-header {
+    display: flex;
+    position: relative;
+    margin: 410px auto;
+    font-size: 6vw;
+    color: var(--primary-colour);
+    text-shadow: var(--primary-text-shadow);
+}
+
+.vr-girl-image-frame,
+.elephant-image-frame,
+.speach-image-frame {
+    position: relative;
+    width: 23%;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 60%;
+}
+
+.vr-girl-image,
+.elephant-image,
+.speach-image {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: var(--primary-border-radius);
+    border-style: groove;
+    border-color: var(--primary-colour);
+    box-shadow: var(--secoundary-box-shadow);
+}
+
+.speach-header {
+    position: absolute;
+    top: 1110px;
+    left: 100px;
+    text-shadow: var(--primary-box-shadow);
+    color: var(--primary-colour);
+    font-size: 3.5rem;
+    margin: 20px;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+.vr-girl-frame,
+.elephant-frame,
+.speach-frame {
+    margin-bottom: 100px;
+    width: 50%;
+    height: auto;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background-color: var(--primary-gray-color);
+    box-shadow: var(--blue-box-shadow);
+    border-style: groove;
+    border-color: var(--primary-colour);
+}
+
+.vr-girl-h1,
+.elephant-h1,
+.speach-h1 {
+    text-decoration: underline;
+    text-shadow: var(--primary-text-shadow);
+    color: var(--primary-colour);
+    font-size: 2.5rem;
+    margin: 20px auto;
+}
+
+.vr-girl-p1,
+.elephant-p1,
+.speach-p1 {
+    color: var(--primary-colour);
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.speach-h2 {
+    text-shadow: var(--primary-text-shadow);
+    color: var(--primary-colour);
+    font-size: 1.3rem;
+    line-height: 1;
+    margin-top: 40px;
+    padding: 10px;
+    margin-right: 600px;
+}
+
+.speach-h3 {
+    text-shadow: var(--primary-text-shadow);
+    color: var(--primary-colour);
+    font-size: 1.3rem;
+    line-height: 1;
+    margin: 10px;
+    padding: 10px;
+    margin-right: 500px;
+}
+
+.about-us-button-frame {
+    display: flex;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 170px;
+    height: 50px;
+    margin: 0 auto;
+    box-shadow: var(--secoundary-box-shadow);
+}
+
+.about-us-fixed-button {
+    display: flex;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-menu-color);
+}
+
+.about-us-button-frame:hover {
+    box-shadow: var(--blue-box-shadow);
+}

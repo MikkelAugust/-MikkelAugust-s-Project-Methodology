@@ -3,14 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/key-hole.css">
-    <link rel="stylesheet" href="/css/sign-up.css">
+    <meta name="description" content="Sign up to the Community Science Museum and gain access to exclusive exhibits, interactive experiences, and member benefits." />
+    <link rel="stylesheet" href="/css/style/variables.css">
+    <link rel="stylesheet" href="/css/pages/sign-up.css">
+    <link rel="stylesheet" href="/css/style/key-hole.css">
+    <link rel="stylesheet" href="/css/style/logo-navbar.css">
     <title>Sign-Up Today!</title>
 </head>
+
 <body>
+
+    <header>
+        <div class="header-content-main">
+
+            <nav>
+                <div class="menu">
+                    <button class="menu-button" aria-expanded="false" aria-controls="menu-dropdown">Menu</button>
+                    <div id="menu-dropdown" class="dropdown-menu">
+                        <a href="/pages/about-us.html" class="dropdown-item">About Us</a>
+                        <a href="/pages/history.html" class="dropdown-item">History</a>
+                        <a href="/pages/contact-us.html" class="dropdown-item">Contact Us</a>
+                        <a href="/pages/science-room.html" class="dropdown-item">Science Room</a>
+                        <a href="/pages/exhibits.html" class="dropdown-item">Exhibits</a>
+                    </div>
+                </div>
+            </nav>
+            
+            <a href="/index.html">
+                <img class="museum-icon" src="/Images/Museum.jpg" alt="Community Science Museum Logo">
+            </a>
+</header>
+
     <main>
         <div class="frame1">
             <h1>Sign Up</h1>
@@ -23,16 +46,38 @@
              name="username-text-box"></input>
 
             <label class="check-box">
-                <input type="checkbox" name="checkbox" value="singn-up">
+                <input class="check-box-frame" type="checkbox" name="checkbox" value="singn-up">
                 I do not want to recive emails with advertising, news, suggestions or marketing promotions
               </label>
 
-            <form action="/pages/success-page.html" method="get">
+            <form action="/feedback-pages/success-page.html" method="get">
                 <button class="sign-up-button"type="submit" >Sign Up</button>
             </form>
 
               <p1>By signing up to create an account, you are accepting our terms of service and privacy policy</p1>
         </div>
     </main>
+
+    <input type="checkbox" id="chat-toggle" class="chat-toggle">
+    <label for="chat-toggle" class="key-hole-icon" aria-label="Open Chat">
+        <img class="key-hole-icon" src="/Images/keyhole.jpg" alt="Chat Icon"></label>
+                
+
+<div class="chat-overlay">
+<div class="chat-container">
+    <div class="chat-header">
+        <h3>Support Chat</h3>
+        <label for="chat-toggle" class="close-btn" aria-label="Close Chat">&times;</label>
+    </div>
+    <div class="chat-content">
+        <p>Welcome! How can we assist you today?</p>
+        <textarea placeholder="Type your message here..." rows="3"></textarea>
+        <form action="/index.html" method="get">
+            <button type="submit" href="/index.html" class="send-btn">Send</button>
+        </form>
+    </div>
+</div>
+</div>
+
 </body>
 </html>

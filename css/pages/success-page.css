@@ -36,7 +36,7 @@ main {
 
 img {
     position: absolute;
-    top: 240px;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%) scale(0.8);
     opacity: 0;
@@ -44,16 +44,18 @@ img {
     width: 80px;
     height: auto;
     animation: floatUp 2s ease-out forwards;
+    border-radius: 5px;
+    box-shadow: var(--secoundary-box-shadow);
 }
 
 h1 {
-    font-size: 2.5rem;
-    text-shadow: var(--sign-up-button-colour) 0px 15px 20px;
+    font-size: 3.5rem;
+    border-radius: 5px;
 }
 
 h2 {
     top: 30px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 10px;
     text-align: center;
 }
@@ -62,12 +64,13 @@ h2 {
     position: relative;
     top: 80px;
     background-color: var(--sign-up-button-colour);
-    border-radius: 500px;
-    box-shadow: var(--primary-box-shadow);
+    border-radius: 5px;
     text-decoration: none;
     width: 200px;
     height: 40px;
     color: var(--primary-colour);
+    border-radius: 5px;
+    box-shadow: var(--secoundary-box-shadow);
 }
 
 .main-page-button:hover {
@@ -81,7 +84,7 @@ h2 {
     }
 
     h2 {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 
@@ -91,7 +94,7 @@ h2 {
     }
 
     h2 {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     .main-page-button {

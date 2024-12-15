@@ -1,10 +1,14 @@
-@import url(variables.css);
-@import url(footer.css);
-@import url(logo-navbar.css);
-@import url(key-hole.css);
+@import url(style/variables.css);
+@import url(style/footer.css);
+@import url(style/logo-navbar.css);
+@import url(style/key-hole.css);
+@import url(style/menu-button.css);
 
 body {
     background-image: linear-gradient(#E8D123, #C86400);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
     min-height: 100vh;
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -13,9 +17,10 @@ body {
 }
 
 main {
-    display: block;
+    margin-top: 200px;
+    display: flex;
     position: relative;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     height: auto; /* Adjust to content height */
 }
@@ -25,18 +30,18 @@ main {
     position: relative;
     background-color: var(--primary-colour);
     width: 40%;
-    height: auto; /* Adjust based on content */
+    height: auto;
     padding: 60px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the children inside the frame */
+    align-items: center;
     justify-content: center; 
 }
 
 h1 {
-    font-size: 2.5rem;
-    text-shadow: var(--sign-up-button-colour) 0px 15px 20px;
+    font-size: 3.5rem;
+    text-shadow: var(--secoundary-box-shadow);
     text-decoration: underline;
 }
 
@@ -45,24 +50,32 @@ h2 {
 }
 
 input {
+    height: 30px;
+    width: 50%;
     margin: 20px;
     box-shadow: var(--primary-box-shadow);
+    border-radius: 5px;
+}
+
+.check-box-frame {
+    box-shadow: none;
+    margin: auto;
 }
 
 .check-box {
-    display: flex;
+    display:inline-block;
     margin: 5px;
-    width: 70%;
+    width: 50%;
     position: relative;
     font-size: clamp(10px, 2vw, 12px);
-    margin-top: 10px; /* Add a little space from the inputs */
+    margin-top: 10px;
 }
 
 .sign-up-button {
     position: relative;
     background-color: var(--sign-up-button-colour);
-    border-radius: 500px;
-    box-shadow: var(--primary-box-shadow);
+    border-radius: 5px;
+    box-shadow: var(--secoundary-box-shadow);
     text-decoration: none;
     width: 200px;
     height: 30px;

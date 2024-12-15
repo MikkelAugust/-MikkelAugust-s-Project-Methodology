@@ -1,7 +1,9 @@
-@import url(variables.css);
-@import url(footer.css);
-@import url(logo-navbar.css);
-@import url(key-hole.css);
+@import url(style/variables.css);
+@import url(style/footer.css);
+@import url(style/logo-navbar.css);
+@import url(style/key-hole.css);
+@import url(style/menu-button.css);
+@import url(/css/styles.css);
 
 * {
     margin: 0;
@@ -11,7 +13,6 @@
 
 html, body {
     font-family: 'Changa', sans-serif;
-    background-color: var(--primary-background-colour);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -21,16 +22,65 @@ html, body {
     padding: 0;
     height: auto;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-.header-content {
+.main-page-h1 {
     position: relative;
+    color: var(--primary-colour);
+    font-family: bolder;
+    margin: 100px;
+    text-align: center;
+    text-decoration: underline;
 }
 
-.header-img {
+.header-content-main {
+    background-image: url(../Images/background---.jpg);
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 1045px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.line {
+    height: 1.4px;
+    width: 100%;
+    background-color: var(--primary-button-colour);
+    margin-top: 90px;
+    box-shadow: var(--secoundary-box-shadow);
+    margin: 100px;
+}
+
+.science-room-ancor {
+    position: relative;
+    border-style: groove;
+    box-shadow: var(--primary-orange-colour);
+    width: 100%;
+}
+
+.science-room-image{
+    position: relative;
     width: 100%;
     height: auto;
-    object-fit: cover;
+}
+
+main {
+    background-color: var(--primary-background-colour);
+    font-family: 'Changa', sans-serif;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
+    align-items: center;
 }
 
 /* Textbox */
@@ -40,7 +90,7 @@ html, body {
     max-width: 400px;
     border-radius: 20px;
     position: absolute;
-    top: 58%;
+    top: 60%;
     right: 5%;
     transform: translateY(-50%);
     font-size: clamp(14px, 2vw, 18px);
@@ -51,8 +101,9 @@ html, body {
 }
 
 .h1-main {
-    font-size: clamp(24px, 3vw, 32px);
+    font-size: bold clamp(24px, 3vw, 32px);
     margin: 10px 0;
+    width: 100%;
 }
 
 .p1-main {
@@ -60,68 +111,277 @@ html, body {
     margin: 10px 0;
 }
 
-.main-button1 {
-    width: clamp(80px, 6vw, 100px);
-    height: 45px;
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    background-color: var(--primary-menu-color);
+.member-frame {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 100px;
 }
 
-nav {
-    position: absolute;
-    top: 90px;
-    left: 5%;
-    box-shadow: var(--primary-box-shadow);
-}
-
-.menu-button {
-    font-size: clamp(14px, 1.5vw, 16px);
-    padding: 8px 12px;
-    color: var(--secoundary-color);
-    background-color: var(--primary-menu-color);
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background: #272626;
+.member-image {
+    max-width: 35%;
+    min-width: 15%;
+    height: auto;
     padding: 10px;
-    border-radius: 5px;
-    z-index: 10;
+    margin: 0;
+    object-fit: cover;
+    box-shadow: var(--secoundary-box-shadow);
 }
 
-.dropdown-item {
-    font-size: clamp(14px, 1.5vw, 16px);
+.member-text-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: var(--secoundary-colour);
+    background-color: var(--secondary-gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-radius: var(--primary-border-radius);
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    padding: 30px;
+    line-height: 30px;
+    box-shadow: var(--secoundary-box-shadow);
+}
+
+.member-text {
+    font-size: clamp(26px, 2.6vw, 30px);
+}
+
+.member-p1 {
+    font-size: clamp(16px, 2.6vw, 20px);
+    line-height: 30px;
+}
+
+.key-hole-image {
+    width: 20%;
+    min-width: 5%;
+    height: auto;
     padding: 10px;
-    color: white;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 500px;
+}
+
+.key-hole-image-frame {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 100px;
+}
+
+.key-hole-frame {
     text-align: center;
+    justify-content: center;
+    position: relative;
+    color: var(--primary-colour);
+    background-color: var(--secoundary-green-colour);
+    width: 50%;
+    border-radius: var(--primary-border-radius);
+    margin-bottom: 150px;
+    padding: 50px;
 }
 
-.menu:hover .dropdown-menu {
-    display: block;
-    color: #272626;
+.key-hole-h1 {
+    font-size: clamp(20px, 2.6vw, 30px);
+    line-height: 50px;
+    color: var(--secoundary-colour);
+    text-decoration: underline;
+    padding-bottom: 60px;
+}
+
+.key-hole-p1 {
+    font-size: clamp(20px, 1.8vw, 20px);
+    line-height: 30px;
+    width: 300px;
+    color: var(--secoundary-colour);
+
+}
+
+.button-frame {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.sign-up-main {
+    position: relative;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--primary-menu-color);
+    text-align: center;
+    box-shadow: var(--secoundary-box-shadow);
+}
+
+.science-room-form {
+    width: 20%;
+    height: 45px;
+    margin-left: 80%;
+}
+
+.main-science-button1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--primary-menu-color);
+    text-align: center;
+    box-shadow: var(--secoundary-box-shadow);
+}
+
+.main-button1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: var(--primary-menu-color);
+    text-align: center;
+    box-shadow: var(--secoundary-box-shadow);
+}
+
+.nav-board {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    border-radius: 2px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.nav-frames {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    max-height: 700px;
+    text-decoration: none;
+    border: 2px solid var(--secoundary-colour);
+    border-radius: var(--primary-border-radius);
+    overflow: hidden;
+    box-shadow: var(--secoundary-box-shadow);
+}
+
+.top-part {
+    height: 40%;
+    width: 100%;
+}
+
+.top-part img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.middle-part {
+    height: 20%;
+    width: 100%;
+    background-color: var(--primary-button-colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px bold var(--secoundary-colour);
+}
+
+.middle-part h2 {
+    color: var(--primary-colour);
+    font-size: bolder;
+    margin: 0;
+    padding: 10px;
+}
+
+
+.bottom-part {
+    height: 40%;
+    width: 100%;
+}
+
+.bottom-part img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-frames:hover {
+    transform: scale(1.1);
 }
 
 .main-button1:hover {
     background-color: var(--secondary-orange-colour);
-    color: var(--secondary-colour);
+    color: var(--secoundary-colour);
     border-color: var(--secoundary-color);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transform: scale(1.1);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 1085px) {
+.main-science-button1:hover {
+    background-color: var(--secondary-orange-colour);
+    color: var(--secoundary-colour);
+    border-color: var(--secoundary-color);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.sign-up-main:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: var(--secoundary-colour);
+}
+
+.sign-up-main:hover {
+    box-shadow: var(--blue-text-shadow);
+}
+
+@media (max-width: 1400px) {
+
     .main-textbox {
         max-width: 300px;
         right: 3%;
     }
 
-    .main-button1 {
-        width: clamp(80px, 4vw, 70px);
-        height: 30px;
+    .p1-main {
+        font-size: clamp(18px, 5vw, 20px);
+    }
+
+    .h1-main {
+        font-size: clamp(20px, 6vw, 26px);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1085px) {
+
+    .header-content {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 533px;
+    }
+
+    .header-img {
+        width: 100%;
+        height: 533px;
+        object-fit: cover;
+        overflow: hidden;
+        image-rendering:optimizeQuality;
+    }
+
+    .main-textbox {
+        max-width: 300px;
+        right: 3%;
     }
 
     .p1-main {
@@ -131,31 +391,17 @@ nav {
     .h1-main {
         font-size: clamp(16px, 3vw, 26px);
     }
-
-    nav {
-        left: 4%;
-        top: 70px;
-    }
 }
 
 @media (max-width: 768px) {
+
     .main-textbox {
         right: 2%;
         padding: 15px;
     }
 
-    .menu-button {
-        padding: 6px 10px;
-    }
-
     .main-textbox {
         max-width: 45%;
-    }
-
-    .main-button1 {
-        font-size: 6px;
-        width: clamp(30px, 8vw, 50px);
-        height: 20px;
     }
 
     .p1-main {
@@ -165,31 +411,17 @@ nav {
     .h1-main {
         font-size: clamp(14px, 2.5vw, 20px);
     }
-
-    nav {
-        left: 2%;
-        top: 50px;
-    }
 }
 
 @media (max-width: 480px) {
+
+    .museum-icon {
+        height: 60px;
+        width: auto;
+    }
+
     .main-textbox {
         top: 55%;
         padding: 10px;
-    }
-
-    .menu-button {
-        font-size: 12px;
-        padding: 5px 8px;
-    }
-
-    .main-button1 {
-        font-size: 6px;
-        width: clamp(30px, 8vw, 50px);
-        height: 20px;
-    }
-
-    .social-media {
-        bottom: 10px;
     }
 }

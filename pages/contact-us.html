@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for the Community Science Museum. Reach out to us for inquiries, questions, or feedback.">
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/style/logo-navbar.css">
+    <link rel="stylesheet" href="/css/style/key-hole.css">
+    <link rel="stylesheet" href="/css/style/footer.css">
+    <link rel="stylesheet" href="/css/pages/contact-us.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Contact Us - Community Science Museum</title>
+</head>
+
+<body>
+    <main class="contact-main">
+        <nav>
+            <div class="menu">
+                <button class="menu-button" aria-expanded="false" aria-controls="menu-dropdown">
+                    Menu
+                </button>
+                <div id="menu-dropdown" class="dropdown-menu">
+                    <a href="/pages/about-us.html" class="dropdown-item">About Us</a>
+                    <a href="/pages/history.html" class="dropdown-item">History</a>
+                    <a href="/pages/contact-us.html" class="dropdown-item">Contact Us</a>
+                    <a href="/pages/science-room.html" class="dropdown-item">Science Room</a>
+                    <a href="/pages/exhibits.html" class="dropdown-item">Exhibits</a>
+                    <a href="/pages/space.html" class="dropdown-item">Space</a>
+                    <a href="/pages/terms-use.html" class="dropdown-item">Terms Of Use</a>
+                </div>
+            </div>
+        </nav>
+    
+        <h1>Contact Us</h1>
+        <div class="contact-form-frame">
+            <form action="/feedback-pages/success-page.html" method="get">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Your Message" rows="6"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-button">Send</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <input type="checkbox" id="chat-toggle" class="chat-toggle">
+    <label for="chat-toggle" class="key-hole-icon" aria-label="Open Chat">
+        <img class="key-hole-icon" src="/Images/keyhole.jpg" alt="Chat Icon"></label>
+                
+
+<div class="chat-overlay">
+<div class="chat-container">
+    <div class="chat-header">
+        <h3>Support Chat</h3>
+        <label for="chat-toggle" class="close-btn" aria-label="Close Chat">&times;</label>
+    </div>
+    <div class="chat-content">
+        <p>Welcome! How can we assist you today?</p>
+        <textarea placeholder="Type your message here..." rows="3"></textarea>
+        <form action="/index.html" method="get">
+            <button type="submit" href="/index.html" class="send-btn">Send</button>
+        </form>
+    </div>
+</div>
+</div>
+
+    <footer>
+        
+    </footer>
+
+</body>
+</html>

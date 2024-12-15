@@ -1,12 +1,13 @@
 .museum-icon {
-    position: absolute; /* Place it in the top-right corner */
-    top: 70px; /* Distance from the top of the header */
-    right: 30px; /* Distance from the right edge */
-    width: clamp(100px, 5vw, 100px); /* Responsive sizing */
+    padding: 5px;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    width: clamp(100px, 5vw, 100px);
     height: auto;
-    border-radius: 50%; /* Circular appearance */
+    border-radius: 50%;
     box-shadow: var(--primary-box-shadow);
-    z-index: 10; /* Ensure it stays on top */
+    z-index: 10;
     cursor: pointer;
 }
 
@@ -17,30 +18,26 @@ nav {
     width: 10%;
     height: auto;
     border-style: double;
-    border-color: white;
+    border-color: var(--primary-colour);
     justify-content: center;
     max-width: 160px;
     min-width: 55px;
+    padding: 1px;
+    margin: 0;
 }
 
 .menu-button {
-    background-color: #D1503A;
-    color: #ffffff;
+    background-color: var(--primary-button-colour);
+    color: var(--primary-colour);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    max-width: 160px;
     width: 100%;
     height: auto;
     text-decoration: none;
-}
-
-.menu-button:hover {
-    background-color: #D1503A;
-    color: #FFFFFF;
 }
 
 /* Dropdown Menu */
@@ -48,7 +45,7 @@ nav {
     display: none;
     position: absolute;
     top: 50px;
-    background-color: #272626;
+    background-color: var(--primary-background-colour);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     min-width: 151px;
@@ -56,26 +53,25 @@ nav {
     z-index: 10;
 }
 
-/* Dropdown Items */
 .dropdown-item {
     display: block;
-    padding: 10px 15px; /* Default padding */
-    color: #ffffff;
+    padding: 10px 15px;
+    color: var(--primary-colour);
     text-decoration: none;
     background-color: #272626;
     text-align: center;
     transition: background-color 0.3s ease, color 0.3s ease;
-    border-color: #FFFFFF;
+    border-color: var(--primary-colour);
     border-style: double;
-    font-size: 16px; /* Default font size */
-    white-space: nowrap; /* Prevent wrapping by default */
-    overflow: hidden; /* Ensure no overflow */
-    text-overflow: ellipsis; /* Adds ellipsis for long text */
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.dropdown-item:hover {
-    background-color: #FFFFFF;
-    color: #272626;
+.menu:hover .dropdown-menu,
+.menu:focus-within .dropdown-menu {
+    display: block;
 }
 
 /* Show Dropdown on Hover */
