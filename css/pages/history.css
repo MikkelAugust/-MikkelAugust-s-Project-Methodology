@@ -1,7 +1,5 @@
 @import url(/css/style/variables.css);
-@import url(/css/style/logo-navbar.css);
-@import url(/css/style/key-hole.css);
-@import url(/css/style/footer.css);
+
 
 html, body {
     font-family: 'Changa', sans-serif;

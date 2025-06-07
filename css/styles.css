@@ -1,9 +1,4 @@
 @import url(style/variables.css);
-@import url(style/footer.css);
-@import url(style/logo-navbar.css);
-@import url(style/key-hole.css);
-@import url(style/menu-button.css);
-@import url(/css/styles.css);
 
 * {
     margin: 0;
@@ -252,15 +247,15 @@ main {
 }
 
 .nav-board {
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-    border-radius: 2px;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    padding: 40px;
-    overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  border-radius: 2px;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  overflow: hidden;
 }
 
 .nav-frames {
@@ -313,10 +308,6 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.nav-frames:hover {
-    transform: scale(1.1);
 }
 
 .main-button1:hover {

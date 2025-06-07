@@ -36,26 +36,23 @@
 
     <main>
         <div class="frame1">
-            <h1>Sign Up</h1>
-            <h2>Create an account</h2>
-            <input type="text" placeholder="Email.."
-             name="email-text-box"></input>
-             <input type="text" placeholder="Password.."
-             name="password-text-box"></input>
-             <input type="text" placeholder="Username"
-             name="username-text-box"></input>
+<h1>Sign Up</h1>
+<h2>Create an account</h2>
 
-            <label class="check-box">
-                <input class="check-box-frame" type="checkbox" name="checkbox" value="singn-up">
-                I do not want to recive emails with advertising, news, suggestions or marketing promotions
-              </label>
+<form action="/feedback-pages/success-page.html" method="get">
+  <input type="email" placeholder="Email..." name="email-text-box" required>
+  <input type="password" placeholder="Password..." name="password-text-box" required>
+  <input type="text" placeholder="Username" name="username-text-box" required>
 
-            <form action="/feedback-pages/success-page.html" method="get">
-                <button class="sign-up-button"type="submit" >Sign Up</button>
-            </form>
+  <label class="check-box">
+    <input class="check-box-frame" type="checkbox" name="opt-out" value="no-emails">
+    I do not want to receive emails with advertising, news, suggestions or marketing promotions
+  </label>
 
-              <p1>By signing up to create an account, you are accepting our terms of service and privacy policy</p1>
-        </div>
+  <button class="sign-up-button" type="submit">Sign Up</button>
+</form>
+
+<p>By signing up to create an account, you are accepting our terms of service and privacy policy.</p>
     </main>
 
     <input type="checkbox" id="chat-toggle" class="chat-toggle">
@@ -79,5 +76,6 @@
 </div>
 </div>
 
+<script src="/menu.js"> type="module"</script>
 </body>
 </html>

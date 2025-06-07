@@ -1,28 +1,24 @@
 @import url(style/variables.css);
-@import url(style/footer.css);
-@import url(style/logo-navbar.css);
-@import url(style/key-hole.css);
-@import url(style/menu-button.css);
 
 body {
     background-image: var(--primary-linear-gradient-color);
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow-x: hidden;
     background-size: cover;
     min-height: 100vh;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
     margin: 0;
 }
 
 main {
-    margin-top: 200px;
+    margin: 200px 0 100px 0;
     display: flex;
     position: relative;
     flex-direction: row;
     width: 100%;
-    height: auto; /* Adjust to content height */
+    height: auto;
 }
 
 .frame1 {
@@ -40,35 +36,41 @@ main {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     text-shadow: var(--secoundary-box-shadow);
     text-decoration: underline;
+    margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 input {
     height: 30px;
     width: 50%;
-    margin: 20px;
+    margin: 20px auto;
+    padding: 10px;
     box-shadow: var(--primary-box-shadow);
     border-radius: 5px;
-}
-
-.check-box-frame {
-    box-shadow: none;
-    margin: auto;
+    display: block;
 }
 
 .check-box {
-    display:inline-block;
-    margin: 5px;
-    width: 50%;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
     font-size: clamp(10px, 2vw, 12px);
-    margin-top: 10px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.check-box-frame {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
 }
 
 .sign-up-button {
@@ -81,17 +83,26 @@ input {
     height: 30px;
     color: var(--primary-colour);
     text-decoration: underline;
+    margin: 20px auto;
+    display: block;
 }
 
-p1 {
-    font-size: clamp(10px, 2vw, 12px);
-    margin: 10px;
+.sign-up-terms {
+    font-size: 0.85rem;
+    margin: 10px auto;
     padding: 5px;
-    text-decoration: none;
+    text-align: center;
     color: var(--gray-text-colour);
+    width: 80%;
 }
 
 .sign-up-button:hover {
     background-color: var(--primary-yellow-colour);
     color: var(--secoundary-colour);
+}
+
+p {
+    font-size: 0.85rem;
+    color: gray;
+    text-align: center;
 }
