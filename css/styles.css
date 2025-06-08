@@ -8,8 +8,6 @@
 
 html, body {
     font-family: 'Changa', sans-serif;
-    background-size: cover;
-    background-position: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -78,7 +76,6 @@ main {
     align-items: center;
 }
 
-/* Textbox */
 .main-textbox {
     background-color: #424242c5;
     width: 90%;
@@ -203,21 +200,25 @@ main {
 .button-frame {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: sans-serif;
 }
 
 .sign-up-main {
     position: relative;
     width: 50%;
     height: auto;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     background-color: var(--primary-menu-color);
     text-align: center;
     box-shadow: var(--secoundary-box-shadow);
 }
 
-.science-room-form {
+.science-room-frame {
     width: 20%;
     height: 45px;
     margin-left: 80%;
@@ -268,6 +269,12 @@ main {
     border-radius: var(--primary-border-radius);
     overflow: hidden;
     box-shadow: var(--secoundary-box-shadow);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.nav-frames:hover{
+    transform: scale(1.05);
 }
 
 .top-part {
@@ -330,9 +337,6 @@ main {
     cursor: pointer;
     transform: scale(1.1);
     color: var(--secoundary-colour);
-}
-
-.sign-up-main:hover {
     box-shadow: var(--blue-text-shadow);
 }
 

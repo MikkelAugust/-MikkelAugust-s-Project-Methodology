@@ -1,34 +1,14 @@
 @import url(/css/style/variables.css);
 
 
-html, body {
-    font-family: 'Changa', sans-serif;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    height: auto;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
-header, .header-image{
-    background-image: url(/Images/library.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-
 .history-header-content {
     position: relative;
     display: inline-block;
     width: 100%;
     height: 1055px;
+    background-image: url(/Images/library.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 main {
@@ -52,11 +32,13 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    margin: 100px;
+    margin: 20px;
   }
   
   .container-reverse {
     flex-direction: row-reverse;
+    width: 100%;
+    height: auto;
   }
   
   .text-bubble {
@@ -72,56 +54,63 @@ main {
 .elephant-h1,
 .speach-h1 {
   text-align: center;
-  padding: 20px;
-  text-decoration: underline var(--secoundary-colour);
+  padding: 1rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   text-shadow: var(--secoundary-box-shadow);
 }
 
-.p2,
 .speach-p1,
 .big-bone-p1,
 .elephant-p1 {
   color: var(--secoundary-colour);
   text-align: center;
-  line-height: 30px;
+  line-height: 1.6;
+  padding: 0.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
 h2 {
     background-color: var(--primary-orange-colour);
     border-radius: var(--secoundary-border-radius);
-    padding: 15px 20px;
+    padding: 1rem 1.5rem;
     color: var(--primary-colour);
-    max-width: 40%;
+    max-width: 90%;
     text-align: center;
-    text-decoration: underline var(--secoundary-colour);
+    text-decoration: underline;
     text-decoration-color: var(--secoundary-orange-colour);
     text-shadow: var(--secoundary-box-shadow);
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    margin: 1rem auto;
 }
 
 p2 {
     background-color: var(--primary-orange-colour);
     border-radius: var(--secoundary-border-radius);
-    padding: 15px 20px;
+    padding: 1rem 1.5rem;
     color: var(--secoundary-colour);
-    max-width: 40%;
+    max-width: 90%;
     text-align: center;
-    line-height: 30px;
+    line-height: 1.6;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin: 0.5rem auto;
+    display: block;
 }
   
   .image-container img {
-    width: 100%;
-    max-width: 500px;
+    width: 30%;
     height: auto;
+    object-fit: cover;
     border-radius: var(--primary-border-radius);
-    margin: 0 20px;
+    display: block;
+    margin: 0 auto;
   }
   
   .speach-image,
   .elephant-image,
   .big-bone-image {
     width: 100%;
-    max-width: 500px;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: var(--primary-border-radius);
   }
 
@@ -129,8 +118,8 @@ p2 {
     height: 1.4px;
     width: 100%;
     background-color: var(--primary-button-colour);
-    margin-top: 90px;
     box-shadow: var(--secoundary-box-shadow);
+    margin: 0 auto;
   }
 
   .space-button {

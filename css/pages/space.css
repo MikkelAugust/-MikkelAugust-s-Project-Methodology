@@ -92,9 +92,15 @@ main {
     width: 20%;
     height: auto;
     margin-left: auto;
+    text-decoration:none;
+    transition: transform 0.2s ease-in-out;
 }
 
-.fun-room-space-button{
+.fun-room-button-frame:hover{
+    transform: scale(1.05);
+}
+
+.fun-button{
     width: 100%;
     height: 40px;
     display: flex;
@@ -208,8 +214,8 @@ main {
 
 .vr-text-box {
     font-size: 20px;
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Stack elements vertically */
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: var(--primary-orange-colour);
     text-align: left;
@@ -230,7 +236,7 @@ main {
     position: relative;
     margin-left: 200px;
     margin-top: 20px;
-    width: 50px; /* Adjust size as needed */
+    width: 50px;
     height: 50px;
     box-shadow: var(--primary-colour) 0 10px 100px;
 }
@@ -262,21 +268,25 @@ main {
 
 .math-button-frame {
     display: flex;
-    width: 100%;
+    width: 200px;
     height: auto;
+    transition: 0.3s ease-in-out;
+    margin-left: auto;
+    text-decoration: none;
+    box-shadow: var(--secoundary-box-shadow);
+}
 
+.math-button-frame:hover{
+    transform: scale(1.05);
 }
 
 .math-button {
-    display: flex;
     background-color: var(--primary-menu-color);
     border-radius: var(--primary-border-radius);
-    width: 15%;
-    height: 50px;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
-    box-shadow: var(--secoundary-box-shadow);
+    width: 100%;
+    height: 40px;
 }
 
 .toy-text-frame {
@@ -312,25 +322,23 @@ main {
 .contact-button-frame {
     display: flex;
     position: relative;
-    width: 100%;
+    width: 20%;
     height: auto;
+    text-decoration: none;
+    margin-left: 0;
+    margin-bottom: 10%;
+}
+
+.contact-button-frame:hover{
+    transform: scale(1.05);
 }
 
 .contact-button {
-    display: flex;
     background-color: var(--primary-menu-color);
     border-radius: var(--primary-border-radius);
-    width: 15%;
+    width: 100%;
     height: 50px;
     align-items: center;
     justify-content: center;
-    margin-left: 50%;
-    margin-bottom: 10%;
     box-shadow: var(--secoundary-box-shadow);
-}
-
-.fun-room-space-button:hover,
-.math-button:hover,
-.contact-button:hover{
-    box-shadow: var(--green-box-shadow);
 }
