@@ -16,10 +16,9 @@ This website was built as part of a front-end development project and aims to:
 
 🚀 Built With
 	•	HTML5
-	•	CSS3 (with custom variables and responsiveness)
-	•	JavaScript (optional: describe usage if dynamic functionality is used)
-	•	Bootstrap (optional)
-	•	React.js (only if you’re using it – remove if not used)
+	•	CSS3
+	•	JavaScript vanilla
+
 
 🛠️ Getting Started
 
