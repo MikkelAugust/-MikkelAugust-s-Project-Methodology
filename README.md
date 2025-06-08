@@ -1,6 +1,6 @@
 # Community Science Museum
 
-![Museum Preview](./images/Museum.jpg)
+![Museum Preview](./Images/Museum.jpg)
 
 🧪 Community Science Museum
 
