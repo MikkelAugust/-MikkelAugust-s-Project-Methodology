@@ -35,10 +35,6 @@ cd community-science-museum
 # Install dependencies (if using a package manager like npm)
 npm install
 
-To run the project locally:
-# For React projects:
-npm start
-
 # Or simply open index.html in your browser if it's a static site
 
 🤝 Contributing
